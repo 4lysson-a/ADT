@@ -1,5 +1,5 @@
 # Tad
-a study of tad, example: point distance
+a study of tad, example: distance between points
 
 
 ### how to run this code ??
