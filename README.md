@@ -3,14 +3,14 @@ a study of tad, example: distance between points
 
 
 ### how to run this code ??
-in folder on terminal type
+in folder inside terminal, type
 `gcc -c ponto.c ponto.o`
-This command compile tad implementation
+This command compiles the tad implementation
 
 ### And then
 `gcc main.c ponto.o -lm -o main`
-Now compile the main program, including implemantation
-`-lm` is important to include <math.h> and fix some error
+Now compile the main program, including implementation
+`-lm` is important to include <math.h> to fix some error
   
 `./main` 
 To exec main.c
