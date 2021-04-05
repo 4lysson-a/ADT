@@ -1,6 +1,6 @@
 clear || cls
 
-declare -l NAME="vet" || NAME="vet"
+declare -l NAME="ponto" || NAME="ponto"
 
 gcc -c $NAME.c -o $NAME.o 
 gcc main.c $NAME.o -lm -o main
