@@ -1,5 +1,6 @@
-# Tad
-a study of tad, example: distance between points
+# ADT 
+## Abstract data type
+A study in ADT
 
 
 
