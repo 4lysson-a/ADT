@@ -1,7 +1,3 @@
-# Tad
-a study of tad, example: distance between points
-
-
 ### how to run this code ??
 in folder inside terminal, type
 `gcc -c ponto.c ponto.o`
