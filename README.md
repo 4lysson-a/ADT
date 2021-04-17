@@ -1,5 +1,5 @@
 # ADT 
-## Abstract data type
+### Abstract data type
 A study in ADT
 
 
@@ -11,7 +11,7 @@ just execute in terminal
 
 ```./start.sh```
 
-#### Error permission denied 
+##### Error permission denied 
 if you have problem with permission 
 
 type in terminal 
