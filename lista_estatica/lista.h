@@ -25,6 +25,7 @@ int inserir_final(Lista *li, Alunos al);
 
 int inserir_inicio(Lista *li, Alunos al);
 
+int inserir_ordenado(Lista *li, Alunos al);
 
 int tamanho_lista(Lista *li);
 

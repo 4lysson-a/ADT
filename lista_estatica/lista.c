@@ -80,6 +80,26 @@ int inserir_inicio(Lista *li, Alunos al){
 	li -> dados[0] = al;
 	li -> qtd++;
 
-	printf("\nInsercao no inicio realizada com sucesso !!\n")
+	printf("\nInsercao no inicio realizada com sucesso !!\n");
 	return 1;
+}
+
+int inserir_ordenado(Lista *li, Alunos al){
+	if(li == NULL) return 0;
+	if(lista_cheia(li)) return 0;
+	
+	int k,i = 0;
+
+	while(i < li->qtd && li->dados[i].matricula < al.matricula)
+		i++;
+
+	for (k = li->qtd-1; k > 0; k--){
+			li -> dados[k+1] = li -> dados[k];
+		}
+	
+	li -> dados[i] = al;
+	li -> qtd++;
+	
+	return 1;		
+
 }

@@ -9,7 +9,7 @@ int main(){
 
 	Alunos dados_alunos;
 
-		dados_alunos.matricula = 123;
+		dados_alunos.matricula = 1;
 		dados_alunos.n1 = 6.7;
 		dados_alunos.n2 = 8.1;
 		dados_alunos.n2 = 9.3;
