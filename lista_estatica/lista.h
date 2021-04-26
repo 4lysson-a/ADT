@@ -23,6 +23,9 @@ Lista *libera_lista(Lista *li);
 
 int inserir_final(Lista *li, Alunos al);
 
+int inserir_inicio(Lista *li, Alunos al);
+
+
 int tamanho_lista(Lista *li);
 
 int lista_cheia(Lista *li);

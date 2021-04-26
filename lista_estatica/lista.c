@@ -53,12 +53,33 @@ int lista_vazia(Lista *li){
 
 int inserir_final(Lista *li, Alunos al){
 	if(li == NULL){
+		printf("\nFalha na insercao, lista invalida\n");
 		return 0;
 	}
-	if(list_full(li)){
+	
+	if(lista_cheia(li)){
+		printf("\nFalha insercao, a lista esta cheia\n");
 		return 0;
 	}
+
 	li -> dados[li->qtd] = al;
 	li -> qtd++;
+	
+	printf("\nInsercao no final realizada com sucesso !!\n");
+	return 1;
+}
+
+
+int inserir_inicio(Lista *li, Alunos al){
+	if(li == NULL) return 0;
+	if(lista_cheia(li)) return 0;
+	for (int i = li->qtd-1; i >= 0; i--){
+		li -> dados[i+1] = li -> dados[i];
+	}
+
+	li -> dados[0] = al;
+	li -> qtd++;
+
+	printf("\nInsercao no inicio realizada com sucesso !!\n")
 	return 1;
 }
