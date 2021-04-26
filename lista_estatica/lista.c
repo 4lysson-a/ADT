@@ -103,3 +103,25 @@ int inserir_ordenado(Lista *li, Alunos al){
 	return 1;		
 
 }
+
+
+
+int rm_final(Lista *li){
+	if(li == NULL) return 0;
+	if(li->qtd == 0) return 0;
+
+	li->qtd--;
+	return 1;
+}
+
+int rm_inicio(Lista *li){
+	if(li == NULL) return 0;
+	if(li->qtd == 0) return 0;
+
+	for (int k = 0; k < li->qtd-1; k++){
+		li -> dados[k] = li->dados[k+1];
+	}
+	li->qtd--;
+	return 1;
+
+}

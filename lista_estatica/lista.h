@@ -33,3 +33,6 @@ int lista_cheia(Lista *li);
 
 int lista_vazia(Lista *li);
 
+int rm_inicio(Lista *li);
+
+int rm_final(Lista *li);
