@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 #include <string.h>
+
 #define MAX 100
 
 struct aluno{
@@ -17,15 +18,19 @@ typedef struct aluno Alunos;
 
 // Implementação das funções
 
-Lista* criar_lista();
+int consultar_pos(Lista *li, int pos, Alunos* al);
 
-Lista *libera_lista(Lista *li);
-
-int inserir_final(Lista *li, Alunos al);
+int inserir_ordenado(Lista *li, Alunos al);
 
 int inserir_inicio(Lista *li, Alunos al);
 
-int inserir_ordenado(Lista *li, Alunos al);
+int consultar_id(Lista *li, int id, Alunos al);
+
+int inserir_final(Lista *li, Alunos al);
+
+int rm_ordenado(Lista *li, int id);
+
+Lista *libera_lista(Lista *li);
 
 int tamanho_lista(Lista *li);
 
@@ -37,4 +42,6 @@ int rm_inicio(Lista *li);
 
 int rm_final(Lista *li);
 
-int rm_ordenado(Lista *li, int id);
+Lista* criar_lista();
+
+void imprime_lista(Lista* li);

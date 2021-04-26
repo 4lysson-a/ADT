@@ -149,3 +149,35 @@ int rm_ordenado(Lista *li, int id){
 	return 1;
 
 }
+
+
+int consultar_pos(Lista *li, int pos, Alunos* al){
+	if(li == NULL || pos <= 0 || pos > li->qtd)	return 0;
+
+	*al = li->dados[pos-1];
+	
+	return 1;	
+}
+
+
+int consultar_id(Lista *li, int id, Alunos al){
+	
+}
+
+
+
+
+void imprime_lista(Lista* li){
+    if(li == NULL)
+        return;
+    int i;
+    for(i=0; i< li->qtd; i++){
+        printf("Matricula: %d\n",li->dados[i].matricula);
+        printf("Nome: %s\n",li->dados[i].nome);
+        printf("Notas: %f %f %f\n",li->dados[i].n1,
+                                   li->dados[i].n2,
+                                   li->dados[i].n3);
+        printf("-----------------------------\n");
+    }
+}
+
