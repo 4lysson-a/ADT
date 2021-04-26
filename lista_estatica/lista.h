@@ -21,7 +21,7 @@ Lista* create_list();
 
 Lista *free_list(Lista *li);
 
-int insert_final(Lista li*, Alunos al);
+int insert_final(Lista *li, Alunos al);
 
 int size_list(Lista *li);
 

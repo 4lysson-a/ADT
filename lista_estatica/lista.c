@@ -19,7 +19,6 @@ Lista *free_list(Lista* li){
 }
 
 
-
 int size_list(Lista *li){
 	if (li == NULL){
 			return -1;
@@ -51,3 +50,15 @@ int list_empty(Lista *li){
 	}
 }
 
+
+int insert_final(Lista *li, Alunos al){
+	if(li == NULL){
+		return 0;
+	}
+	if(list_full(li)){
+		return 0;
+	}
+	li -> dados[li->qtd] = al;
+	li -> qtd++;
+	return 1;
+}
