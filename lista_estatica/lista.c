@@ -125,3 +125,27 @@ int rm_inicio(Lista *li){
 	return 1;
 
 }
+
+
+int rm_ordenado(Lista *li, int id){
+	if(li == NULL) return 0;
+	if(li->qtd == 0) return 0;
+	int k,i = 0;
+
+	while(i<li->qtd || li->dados[i].matricula != id){
+		i++;
+	}
+
+	if( i == li -> qtd ){
+		return 0;
+	}
+
+	for (int k = 0; k < li->qtd-1; k++){
+		li->dados[k] = li->dados[k+1];
+	}
+	
+	li->qtd--;
+
+	return 1;
+
+}

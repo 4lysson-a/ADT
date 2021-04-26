@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
-
+#include <string.h>
 #define MAX 100
 
 struct aluno{
 	int matricula;
-	int nome[30];
+	char nome[30];
 	float n1,n2,n3;	
 };
 
@@ -36,3 +36,5 @@ int lista_vazia(Lista *li);
 int rm_inicio(Lista *li);
 
 int rm_final(Lista *li);
+
+int rm_ordenado(Lista *li, int id);
