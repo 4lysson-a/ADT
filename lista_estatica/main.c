@@ -18,14 +18,12 @@ int main(){
 
 	li = criar_lista();
 
-	insert_final(li,dados_alunos);
+	printf("%d", lista_cheia(li));
 
-	printf("%d", list_full(li));
+	lista_vazia(li);
 
-	list_empty(li);
+	int x = inserir_final(li, dados_alunos);
 
-	int x = insert_final(li, dados_alunos);
-
-	free_list(li);
+	libera_lista(li);
 
 }

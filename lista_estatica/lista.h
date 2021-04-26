@@ -17,15 +17,15 @@ typedef struct aluno Alunos;
 
 // Implementação das funções
 
-Lista* create_list();
+Lista* criar_lista();
 
-Lista *free_list(Lista *li);
+Lista *libera_lista(Lista *li);
 
-int insert_final(Lista *li, Alunos al);
+int inserir_final(Lista *li, Alunos al);
 
-int size_list(Lista *li);
+int tamanho_lista(Lista *li);
 
-int list_full(Lista *li);
+int lista_cheia(Lista *li);
 
-int list_empty(Lista *li);
+int lista_vazia(Lista *li);
 
