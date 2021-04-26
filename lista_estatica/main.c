@@ -12,15 +12,27 @@ int main(){
 		dados_alunos[0].n2 = 8.1;
 		dados_alunos[0].n2 = 9.3;
 		strcpy(dados_alunos[0].nome, "Alysson");
-	}
 
+
+		dados_alunos[1].matricula = 2;
+		dados_alunos[1].n1 = 5.9;
+		dados_alunos[1].n2 = 9.1;
+		dados_alunos[1].n2 = 4.3;
+		strcpy(dados_alunos[1].nome, "Carlos");
+	}
 
 	Lista *li;
 
 	li = criar_lista();
 
-	int x = inserir_final(li, dados_alunos[0]);
-	
+	inserir_final(li, dados_alunos[0]);
+
+	inserir_final(li, dados_alunos[1]);
+
+	imprime_lista(li);
+
+	printf("%s", dados_alunos[3].nome);
+
 	printf("\n%d",lista_vazia(li));
 
 	libera_lista(li);
