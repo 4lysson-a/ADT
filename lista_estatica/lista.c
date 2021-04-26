@@ -160,24 +160,38 @@ int consultar_pos(Lista *li, int pos, Alunos* al){
 }
 
 
-int consultar_id(Lista *li, int id, Alunos al){
-	
+int consultar_id(Lista *li, int id, Alunos* al){
+	if(li == NULL) return 0;
+
+	int k,i = 0;
+
+	while(i<li->qtd && li->dados[i].matricula != id){
+		i++;
+	}
+
+	if(i==li->qtd){
+		return 0;
+	}
+
+	*al = li -> dados[i];
+
+	return 1;
+
 }
-
-
 
 
 void imprime_lista(Lista* li){
     if(li == NULL)
         return;
     int i;
+    printf("\n-----------------------------\n\n");
     for(i=0; i< li->qtd; i++){
         printf("Matricula: %d\n",li->dados[i].matricula);
         printf("Nome: %s\n",li->dados[i].nome);
         printf("Notas: %f %f %f\n",li->dados[i].n1,
                                    li->dados[i].n2,
                                    li->dados[i].n3);
-        printf("-----------------------------\n");
+        printf("\n-----------------------------\n\n");
     }
 }
 
