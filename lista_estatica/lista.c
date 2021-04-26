@@ -5,7 +5,7 @@ struct lista{
 	struct aluno dados[MAX];
 };
 
-Lista* cria_lista(){
+Lista* create_list(){
 	Lista *li;
 	li = (Lista*) malloc(sizeof(struct lista));
 	if(li != NULL){
@@ -14,13 +14,13 @@ Lista* cria_lista(){
 	return li;
 }
 
-Lista *libera_lista(Lista* li){
+Lista *free_list(Lista* li){
 	free(li);
 }
 
 
 
-int tamanho_lista(Lista *li){
+int size_list(Lista *li){
 	if (li == NULL){
 			return -1;
 			// -1 pois se fosse 0, a lista não teria nenhum ou mais de um
@@ -32,7 +32,7 @@ int tamanho_lista(Lista *li){
 }
 
 
-int lista_cheia(Lista *li){
+int list_full(Lista *li){
 	if (li == NULL){
 		return -1;
 	}
@@ -42,7 +42,7 @@ int lista_cheia(Lista *li){
 }
 
 
-int lista_vazia(Lista *li){
+int list_empty(Lista *li){
 	if (li == NULL){
 		return -1;
 	}

@@ -5,8 +5,8 @@ typedef struct lista{
 	struct aluno dados[MAX];
 }Lista;
 
-// implementação das funções
 
+// implementação das funções
 Lista* cria_lista(){
 	Lista *li;
 	li = (Lista*) malloc(sizeof(struct lista));
@@ -81,7 +81,6 @@ int insere_lista_ordenada(Lista* li, Aluno al){
 	while (i<li->qtd && li->dados[i].matricula < al.matricula){
 		i++;
 	}
-
 	for (k=li->qtd-1; k >= i; k--){
 		li->dados[k+1] = li->dados[k];
 	}
