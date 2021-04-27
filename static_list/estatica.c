@@ -7,6 +7,7 @@ typedef struct lista{
 
 
 // implementação das funções
+
 Lista* cria_lista(){
 	Lista *li;
 	li = (Lista*) malloc(sizeof(struct lista));
