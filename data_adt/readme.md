@@ -10,8 +10,6 @@ Desenvolva e implemente um TAD que represente um conjunto de inteiros. Para isso
  - Testar se os dois conjuntos são iguais. <br/>
  - Testar se o conjunto é vazio. <br/>
 
-Para cada função, explique brevemente a ideia adotada. Teste o TAD com uma aplicação.
-
 
 ## Executar o exemplo
 Dê permissão de execução ao script
